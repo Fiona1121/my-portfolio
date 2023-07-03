@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${montserrat.className} bg-light`}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
