@@ -4,6 +4,9 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import profilePic from "../../../public/images/profile/profile-pic-2.jpg";
 import AnimatedNumbers from "@/components/AnimatedNumbers";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 type Props = {};
 
@@ -12,7 +15,7 @@ const About = (props: Props) => {
     <main className="flex w-full flex-col items-center justify-center">
       <Layout className="pt-16">
         <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
-        <div className="grid w-full grid-cols-8 gap-16">
+        <div className="grid grid-cols-8 gap-16 mx-16">
           <div className="col-span-3 flex flex-col items-start justify-start">
             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
               About Me
@@ -72,6 +75,9 @@ const About = (props: Props) => {
             </div>
           </div>
         </div>
+        <Skills />
+        <Experience />
+        <Education />
       </Layout>
     </main>
   );

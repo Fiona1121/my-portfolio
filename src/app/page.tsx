@@ -3,7 +3,6 @@ import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
-import HireMe from "@/components/HireMe";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 
 export default function Home() {
@@ -48,7 +47,6 @@ export default function Home() {
           </div>
         </div>
       </Layout>
-      <HireMe />
     </main>
   );
 }
