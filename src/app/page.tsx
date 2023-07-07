@@ -3,7 +3,7 @@ import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/profile-pic-1.png";
 
 export default function Home() {
   return (
