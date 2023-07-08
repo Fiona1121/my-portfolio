@@ -21,11 +21,11 @@ const About = (props: Props) => {
               About Me
             </h2>
             <p className="font-medium">
-              Hi, I&apos;m Fiona, a web developer and UI/UX designer with a passion
-              for creating beautiful, functional, and user-centered digital
-              experiences. With 2 years of experience in the field. I am always
-              looking for new and innovative ways to bring my clients&apos; visions
-              to life.
+              Hi, I&apos;m Fiona, a web developer and UI/UX designer with a
+              passion for creating beautiful, functional, and user-centered
+              digital experiences. With 2 years of experience in the field. I am
+              always looking for new and innovative ways to bring my
+              clients&apos; visions to life.
             </p>
             <p className="font-medium my-4">
               I believe that design is about more than just making things look
@@ -33,8 +33,8 @@ const About = (props: Props) => {
               enjoyable experiences for users.
             </p>
             <p className="font-medium">
-              Whether I&apos;m working on a website, mobile app, or other digital
-              product, I bring my commitment to design excellence and
+              Whether I&apos;m working on a website, mobile app, or other
+              digital product, I bring my commitment to design excellence and
               user-centered thinking to every project I work on. I look forward
               to the opportunity to bring my skills and passion to your next
               project.
@@ -46,6 +46,12 @@ const About = (props: Props) => {
               src={profilePic}
               alt="Fiona Wu"
               className="w-full h-auto rounded-2xl"
+              priority
+              sizes="
+              (max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw
+              "
             />
           </div>
           <div className="col-span-2 flex flex-col items-end justify-between">
