@@ -3,6 +3,7 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
+import Script from "next/script";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -12,8 +13,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.className} bg-light`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark')
+                } else {
+                  document.documentElement.classList.remove('dark')
+                }
+              } catch (_) {}
+            `,
+          }}
+        />
+      </head>
+      <body
+        className={`${montserrat.className} bg-light text-dark dark:bg-dark dark:text-light`}
+      >
         <NavBar />
         {children}
         <HireMe />

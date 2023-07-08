@@ -7,7 +7,7 @@ import profilePic from "../../public/images/profile/profile-pic-1.png";
 
 export default function Home() {
   return (
-    <main className="flex items-center text-dark w-full min-h-screen bg-light">
+    <main className="flex items-center text-dark w-full min-h-screen bg-light dark:bg-dark dark:text-light">
       <Layout className="pt-0">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
@@ -30,7 +30,8 @@ export default function Home() {
                 className="flex items-center bg-dark text-light p-2.5 pl-6 pr-5 
                 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark
-                border-2 border-solid border-transparent hover:border-dark"
+                border-2 border-solid border-transparent hover:border-dark
+                dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:border-light"
                 download={true}
               >
                 Resume

@@ -17,31 +17,31 @@ const About = (props: Props) => {
         <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
         <div className="grid grid-cols-8 gap-16 mx-16">
           <div className="col-span-3 flex flex-col items-start justify-start">
-            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
               About Me
             </h2>
             <p className="font-medium">
-              Hi, I'm Fiona, a web developer and UI/UX designer with a passion
+              Hi, I&apos;m Fiona, a web developer and UI/UX designer with a passion
               for creating beautiful, functional, and user-centered digital
               experiences. With 2 years of experience in the field. I am always
-              looking for new and innovative ways to bring my clients' visions
+              looking for new and innovative ways to bring my clients&apos; visions
               to life.
             </p>
             <p className="font-medium my-4">
               I believe that design is about more than just making things look
-              pretty – it's about solving problems and creating intuitive,
+              pretty – it&apos;s about solving problems and creating intuitive,
               enjoyable experiences for users.
             </p>
             <p className="font-medium">
-              Whether I'm working on a website, mobile app, or other digital
+              Whether I&apos;m working on a website, mobile app, or other digital
               product, I bring my commitment to design excellence and
               user-centered thinking to every project I work on. I look forward
               to the opportunity to bring my skills and passion to your next
               project.
             </p>
           </div>
-          <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark" />
+          <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light dark:bg-dark">
+            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
             <Image
               src={profilePic}
               alt="Fiona Wu"
@@ -53,7 +53,7 @@ const About = (props: Props) => {
               <span className="inline-block text-7xl font-bold">
                 <AnimatedNumbers value={10} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+              <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                 satisfied clients
               </h2>
             </div>
@@ -61,7 +61,7 @@ const About = (props: Props) => {
               <span className="inline-block text-7xl font-bold">
                 <AnimatedNumbers value={20} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+              <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                 completed projects
               </h2>
             </div>
@@ -69,7 +69,7 @@ const About = (props: Props) => {
               <span className="inline-block text-7xl font-bold">
                 <AnimatedNumbers value={2} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+              <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                 years of experience
               </h2>
             </div>
