@@ -26,7 +26,7 @@ const AnimatedNumbers = (props: Props) => {
     });
   }, [springValue, props.value]);
 
-  return <span ref={ref} className="inline-block text-7xl font-bold"></span>;
+  return <span ref={ref} className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl"></span>;
 };
 
 export default AnimatedNumbers;

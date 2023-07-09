@@ -8,13 +8,13 @@ import profilePic from "../../public/images/profile/profile-pic-1.png";
 export default function Home() {
   return (
     <main className="flex items-center text-dark w-full min-h-screen bg-light dark:bg-dark dark:text-light">
-      <Layout className="pt-0">
-        <div className="flex items-center justify-between w-full">
-          <div className="w-1/2">
+      <Layout className="pt-0 md:p-16 sm:pt-8">
+        <div className="flex items-center justify-between w-full lg:flex-col">
+          <div className="w-1/2 md:w-full">
             <Image
               src={profilePic}
               alt="Fiona Wu"
-              className="w-full h-auto"
+              className="w-full h-auto lg:hidden md:inline-block md:w-full"
               priority
               sizes="
               (max-width: 768px) 100vw,
@@ -23,21 +23,21 @@ export default function Home() {
               "
             />
           </div>
-          <div className="w-1/2 flex flex-col items-center self-center">
+          <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
             <AnimatedText
               text="Turning Vision Into Reality With Code And Design."
-              className="!text-6xl !text-left"
+              className="!text-6xl !text-left xl:!text-5xl lg:!text-6xl lg:!text-center md:!text-5xl sm:!text-3xl"
             />
-            <p className="my-4 text-base font-medium">
+            <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.
             </p>
-            <div className="flex items-center self-start mt-2">
+            <div className="flex items-center self-start mt-2 lg:self-center">
               <Link
                 href="/resume-2023.pdf"
                 target={"_blank"}
-                className="flex items-center bg-dark text-light p-2.5 pl-6 pr-5 
+                className="flex items-center bg-dark text-light p-2.5 pl-6 pr-5 md:p-2 md:px-4 md:text-base
                 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
@@ -50,7 +50,7 @@ export default function Home() {
               <Link
                 href="mailto:fionafdjk123@gmail.com"
                 target={"_blank"}
-                className="ml-4 text-lg font-mediu, capitalize underline"
+                className="ml-4 text-lg font-medium capitalize underline md:text-base"
               >
                 Contact
               </Link>

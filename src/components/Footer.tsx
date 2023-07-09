@@ -6,10 +6,11 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg bg-light text-dark dark:border-light dark:bg-dark dark:text-light">
-      <Layout className="py-8 flex items-center justify-between relative">
+    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg sm:text-base
+    bg-light text-dark dark:border-light dark:bg-dark dark:text-light">
+      <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
-        <div className="flex items-center absolute left-1/2 translate-x-[-50%]">
+        <div className="flex items-center lg:py-1">
           Build with <span className="text-primary dark:text-primaryDark px-1">&#9825;</span>{" "}
           <Link
             href="https://github.com/Fiona1121"

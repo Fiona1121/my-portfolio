@@ -53,7 +53,10 @@ const CustomMobileLink = ({
   };
 
   return (
-    <button className={`${className} relative group text-light dark:text-dark`} onClick={handleClick}>
+    <button
+      className={`${className} relative group text-light dark:text-dark`}
+      onClick={handleClick}
+    >
       {title}
       <span
         className={`h-[2px] inline-block bg-light absolute left-0 -bottom-1 dark:bg-dark
@@ -76,7 +79,11 @@ const NavBar = (props: Props) => {
   };
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between text-dark bg-light dark:bg-dark dark:text-light relative">
+    <header
+      className="w-full px-32 py-8 font-medium flex items-center justify-between 
+      text-dark bg-light dark:bg-dark dark:text-light relative 
+      z-16 lg:px-16 sm:px-8"
+    >
       <button
         className="hidden lg:flex flex-col justify-center items-center h-8 w-8"
         onClick={handleClick}
@@ -146,7 +153,7 @@ const NavBar = (props: Props) => {
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30
-      bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
+          bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
         >
           <nav className="flex flex-col items-center justify-center gap-4">
             <CustomMobileLink href="/" title="Home" toggle={handleClick} />
