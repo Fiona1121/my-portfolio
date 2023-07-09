@@ -14,9 +14,9 @@ const Projects = (props: Props) => {
       <Layout className="pt-16">
         <AnimatedText
           text="Imagintaion is the beginning of creation!"
-          className="mb-16"
+          className="mb-16 lg:!text-7xl md:!text-6xl sm:mb-8 sm:!text-5xl xs:!text-4xl"
         />
-        <div className="grid grid-cols-12 gap-24">
+        <div className="grid grid-cols-12 gap-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-6">
           <div className="col-span-12">
             <FeaturedProject
               type="Featured Project"
@@ -30,7 +30,7 @@ const Projects = (props: Props) => {
               github="https://github.com/Fiona1121/she.design.git"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 md:col-span-12">
             <Project
               title="MakeNTU Website"
               summary="A website built with Gatbsy.js and Contentful for MakeNTU, a competition for students in NTU to showcase their creativity and problem-solving skills."
@@ -39,7 +39,7 @@ const Projects = (props: Props) => {
               github="https://github.com/NTUEEInfoDep/makeNTU-2023.git"
             />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 md:col-span-12">
             <Project
               title="NTUEE Lightdance Website"
               summary="A fun website built with Gatbsy.js, Three.js and Contentful for NTUEE Lightdance, an organization in NTU that performs lightdance."

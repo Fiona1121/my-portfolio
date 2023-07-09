@@ -18,12 +18,19 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = (props: ProjectProps) => {
   return (
-    <article className="relative w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 dark:border-light dark:bg-dark">
-      <div className="absolute top-0 -right-3 -z-10 w-[100.5%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light" />
+    <article
+      className="relative w-full flex items-center justify-between rounded-3xl rounded-br-2xl 
+      border border-solid border-dark bg-light shadow-2xl p-12 dark:border-light dark:bg-dark
+      lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[100.5%] h-[103%] rounded-[2.5rem] rounded-br-3xl 
+      bg-dark dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+      />
       <Link
         href={props.link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage
           src={props.image}
@@ -39,8 +46,8 @@ const FeaturedProject = (props: ProjectProps) => {
           "
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
           {props.type}
         </span>
         <Link
@@ -48,19 +55,20 @@ const FeaturedProject = (props: ProjectProps) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-2xl">
             {props.title}
           </h2>
         </Link>
-        <p className="my-2 font-medium">{props.summary}</p>
+        <p className="my-2 font-medium sm:text-sm">{props.summary}</p>
         <div className="mt-2 flex items-center">
-          <Link href={props.github} target="_blank" className="w-10">
+          <Link href={props.github} target="_blank" className="w-10 md:w-9">
             <GithubIcon />
           </Link>
           <Link
             href={props.link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
+            dark:bg-light dark:text-dark md:text-base md:px-5 sm:ml-3 sm:px-4 sm:text-sm"
           >
             <h2>Visit Project</h2>
           </Link>
@@ -72,8 +80,15 @@ const FeaturedProject = (props: ProjectProps) => {
 
 const Project = (props: ProjectProps) => {
   return (
-    <article className="w-full h-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative dark:border-light dark:bg-dark">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light" />
+    <article
+      className="w-full h-full flex flex-col items-center justify-center rounded-2xl 
+      border border-solid border-dark bg-light shadow-2xl p-12 relative dark:border-light dark:bg-dark 
+      lg:p-8 xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light
+        md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
+      />
       <Link
         href={props.link}
         target="_blank"
@@ -94,7 +109,7 @@ const Project = (props: ProjectProps) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
           {props.type}
         </span>
         <Link
@@ -102,21 +117,22 @@ const Project = (props: ProjectProps) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
             {props.title}
           </h2>
         </Link>
-        <p className="my-2 font-medium">{props.summary}</p>
-        <div className="w-full mt-2 flex items-center justify-end">
+        <p className="my-2 font-medium sm:text-sm">{props.summary}</p>
+        <div className="mt-2 flex items-center">
+          <Link href={props.github} target="_blank" className="w-10 md:w-9">
+            <GithubIcon />
+          </Link>
           <Link
             href={props.link}
             target="_blank"
-            className="rounded-lg bg-dark text-light p-2 px-6 font-semibold mr-3 dark:bg-light dark:text-dark"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
+            dark:bg-light dark:text-dark md:text-base md:px-5 sm:ml-3 sm:px-4 sm:text-sm"
           >
-            <h2>Visit</h2>
-          </Link>
-          <Link href={props.github} target="_blank" className="w-10">
-            <GithubIcon />
+            <h2>Visit Project</h2>
           </Link>
         </div>
       </div>
