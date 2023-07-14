@@ -86,6 +86,7 @@ const NavBar = (props: Props) => {
     >
       <button
         className="hidden lg:flex flex-col justify-center items-center h-8 w-8"
+        aria-label="Toggle Menu"
         onClick={handleClick}
       >
         <span
