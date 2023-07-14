@@ -22,11 +22,11 @@ const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
 const Skills = (props: Props) => {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-60 w-full text-center mb-8 pb-4 md:text-6xl md:mt-32">
+      <h2 className="font-bold text-7xl mt-60 w-full text-center mb-8 pb-4 md:text-6xl md:mt-32">
         Skills
       </h2>
       <div
-        className="w-full h-screen relative flex items-center justify-center rounded-full 
+        className="w-[75%] mx-auto lg:w-[90%] md:w-full h-screen relative flex items-center justify-center rounded-full 
         bg-circularLight dark:bg-circularDark lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm
         lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]"
       >

@@ -20,7 +20,7 @@ const Projects = (props: Props) => {
           text="Imagintaion is the beginning of creation!"
           className="mb-16 lg:!text-7xl md:!text-6xl sm:mb-8 sm:!text-5xl xs:!text-4xl"
         />
-        <div className="grid grid-cols-12 gap-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-6">
+        <div className="grid grid-cols-12 gap-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-12 sm:gap-x-6">
           <div className="col-span-12">
             <FeaturedProject
               type="Featured Project"
@@ -82,7 +82,9 @@ const Projects = (props: Props) => {
           <div className="col-span-6 md:col-span-12">
             <Project
               title="G-Tasker"
-              summary="A task management website built with React.js and GitHub API that allows users to manage their GitHub issues and pull requests."
+              summary="Introducing a powerful task management website crafted with React.js and integrated with the GitHub API. 
+              Seamlessly manage your GitHub issues and pull requests with ease and efficiency. 
+              Stay organized and in control of your development projects using this robust platform."
               link="https://g-tasker.vercel.app"
               image={gTasker}
               github="https://github.com/Fiona1121/g-tasker"

@@ -13,10 +13,10 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <main className="flex w-full flex-col items-center justify-center">
-      <Layout className="pt-16">
+      <Layout className="pt-12">
         <AnimatedText
-          text="Passion Fuels Purpose!"
-          className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+          text="Passion Sparks Innovation: Redefining Web Development!"
+          className="!text-7xl mb-16 lg:!text-6xl sm:!text-5xl xs:!text-3xl sm:mb-8"
         />
         <div className="grid grid-cols-8 gap-16 mx-16 xl:mx-0 sm:gap-8">
           <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:col-span-8 md:order-2">
