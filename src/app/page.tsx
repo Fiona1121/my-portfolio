@@ -45,6 +45,7 @@ export default function Home() {
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:border-light"
                 download={true}
+                locale={false}
               >
                 Resume
                 <LinkArrow className="w-6 ml-2" />
