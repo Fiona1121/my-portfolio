@@ -37,7 +37,7 @@ export const TwitterIcon = ({ className, ...rest }: Props) => (
     />
   </svg>
 );
-// #0A66C2
+
 export const LinkedInIcon = ({ className, ...rest }: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
