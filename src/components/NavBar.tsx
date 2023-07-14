@@ -179,7 +179,7 @@ const NavBar = (props: Props) => {
           </nav>
           <nav className="flex items-center justify-center flex-wrap gap-4 mt-4">
             <motion.a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/shih-yu-wu-9a2376224/"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
