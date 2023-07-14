@@ -20,7 +20,7 @@ const FeaturedProject = (props: ProjectProps) => {
   return (
     <article
       className="relative w-full flex items-center justify-start rounded-3xl rounded-br-2xl 
-      border border-solid border-dark bg-light shadow-2xl p-12 dark:border-light dark:bg-dark
+      border border-solid border-dark bg-light shadow-2xl p-12 dark:border-light dark:bg-dark dark:shadow-light
       lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
       <Link
@@ -86,7 +86,7 @@ const Project = (props: ProjectProps) => {
   return (
     <article
       className="w-full h-full flex flex-col items-center justify-start rounded-2xl 
-      border border-solid border-dark bg-light shadow-2xl p-12 relative dark:border-light dark:bg-dark 
+      border border-solid border-dark bg-light shadow-2xl p-12 relative dark:border-light dark:bg-dark dark:shadow-light
       lg:p-8 xs:p-4"
     >
       <Link
