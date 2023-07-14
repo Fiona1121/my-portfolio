@@ -3,7 +3,7 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
-import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -54,6 +54,7 @@ export default function RootLayout({
         {children}
         <HireMe />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
