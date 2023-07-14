@@ -36,7 +36,7 @@ export default function Home() {
               Experience innovation brought to life through my work.
             </p>
             <div className="flex items-center self-start mt-2 lg:self-center">
-              <Link
+              <a
                 href="/resume-2023.pdf"
                 target={"_blank"}
                 className="flex items-center bg-dark text-light p-2.5 pl-6 pr-5 md:p-2 md:px-4 md:text-base
@@ -45,11 +45,10 @@ export default function Home() {
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:border-light"
                 download={true}
-                locale={false}
               >
                 Resume
                 <LinkArrow className="w-6 ml-2" />
-              </Link>
+              </a>
               <Link
                 href="mailto:fionafdjk123@gmail.com"
                 target={"_blank"}
