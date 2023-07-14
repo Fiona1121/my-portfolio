@@ -14,13 +14,14 @@ const Footer = (props: Props) => {
           Build with <span className="text-primary dark:text-primaryDark px-1">&#9825;</span>{" "}
           <Link
             href="https://github.com/Fiona1121"
+            aria-label="Visit my Github profile"
             className="underline underline-offset-2"
             target={"_blank"}
           >
             Fiona Wu
           </Link>
         </div>
-        <Link href="/" target={"_blank"}>
+        <Link href="/" target={"_blank"} aria-label="Visit my site">
           Say Hello &#128075;
         </Link>
       </Layout>

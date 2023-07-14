@@ -22,6 +22,7 @@ const HireMe = (props: Props) => {
           hover:bg-light hover:text-dark transition-all duration-300 ease-in-out
           dark:bg-light dark:text-dark dark:border-light dark:hover:bg-dark dark:hover:text-light
           md:w-16 md:h-16 md:text-sm md:font-medium"
+          aria-label="Send me email"
         >
           Hire Me
         </Link>

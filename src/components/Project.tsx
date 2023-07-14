@@ -26,6 +26,7 @@ const FeaturedProject = (props: ProjectProps) => {
       <Link
         href={props.link}
         target="_blank"
+        aria-label="Visit project"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage
@@ -49,6 +50,7 @@ const FeaturedProject = (props: ProjectProps) => {
         <Link
           href={props.link}
           target="_blank"
+          aria-label="Visit project"
           className="hover:underline underline-offset-2"
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-2xl">
@@ -57,12 +59,18 @@ const FeaturedProject = (props: ProjectProps) => {
         </Link>
         <p className="my-2 font-medium sm:text-sm">{props.summary}</p>
         <div className="mt-2 flex items-center">
-          <Link href={props.github} target="_blank" className="w-10 md:w-9">
+          <Link
+            href={props.github}
+            target="_blank"
+            aria-label="Visit project Github page"
+            className="w-10 md:w-9"
+          >
             <GithubIcon />
           </Link>
           <Link
             href={props.link}
             target="_blank"
+            aria-label="Visit project"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
             dark:bg-light dark:text-dark md:text-base md:px-5 sm:ml-3 sm:px-4 sm:text-sm"
           >
@@ -84,6 +92,7 @@ const Project = (props: ProjectProps) => {
       <Link
         href={props.link}
         target="_blank"
+        aria-label="Visit project"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
         <FramerImage
@@ -105,6 +114,7 @@ const Project = (props: ProjectProps) => {
           <Link
             href={props.link}
             target="_blank"
+            aria-label="Visit project"
             className="hover:underline underline-offset-2"
           >
             <h2 className="my-1.5 w-full text-left text-3xl font-bold lg:text-2xl">
@@ -114,12 +124,18 @@ const Project = (props: ProjectProps) => {
           <p className="my-2 font-medium sm:text-sm">{props.summary}</p>
         </div>
         <div className="mt-2 flex items-center">
-          <Link href={props.github} target="_blank" className="w-10 md:w-9">
+          <Link
+            href={props.github}
+            target="_blank"
+            aria-label="Visit project Github page"
+            className="w-10 md:w-9"
+          >
             <GithubIcon />
           </Link>
           <Link
             href={props.link}
             target="_blank"
+            aria-label="Visit project"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
             dark:bg-light dark:text-dark md:text-base md:px-5 sm:ml-3 sm:px-4 sm:text-sm"
           >

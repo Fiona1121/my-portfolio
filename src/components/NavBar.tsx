@@ -120,6 +120,7 @@ const NavBar = (props: Props) => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6"
+            aria-label="View my LinkedIn profile"
           >
             <LinkedInIcon />
           </motion.a>
@@ -129,6 +130,7 @@ const NavBar = (props: Props) => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6"
+            aria-label="View my GitHub profile"
           >
             <GithubIcon />
           </motion.a>
@@ -139,6 +141,7 @@ const NavBar = (props: Props) => {
               )
             }
             className="flex items-center justify-center rounded-full bg-dark text-light dark:bg-light dark:text-dark w-6 h-6 p-1"
+            aria-label="Toggle Theme"
           >
             {mode === "dark" ? (
               <SunIcon className={`fill-dark`} />
@@ -181,6 +184,7 @@ const NavBar = (props: Props) => {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6"
+              aria-label="View my LinkedIn profile"
             >
               <LinkedInIcon />
             </motion.a>
@@ -190,6 +194,7 @@ const NavBar = (props: Props) => {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 p-px bg-light border border-solid border-light rounded-md dark:bg-dark dark:border-dark"
+              aria-label="View my GitHub profile"
             >
               <GithubIcon />
             </motion.a>
@@ -200,6 +205,7 @@ const NavBar = (props: Props) => {
                 )
               }
               className="flex items-center justify-center rounded-full bg-dark text-light dark:bg-light dark:text-dark w-6 h-6 p-1"
+              aria-label="Toggle Theme"
             >
               {mode === "dark" ? (
                 <SunIcon className={`fill-dark`} />

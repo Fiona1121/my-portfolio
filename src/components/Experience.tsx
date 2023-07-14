@@ -38,6 +38,7 @@ const Details = ({
             href={companyLink}
             target="_blank"
             className="text-primary capitalize dark:text-primaryDark"
+            aria-label="Visit the company"
           >
             @{company}
           </a>
