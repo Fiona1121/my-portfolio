@@ -37,17 +37,16 @@ export default function Home() {
             </p>
             <div className="flex items-center self-start mt-2 lg:self-center">
               <a
-                href="/resume-2023.pdf"
+                href="https://drive.google.com/file/d/1ExB3hRYot6B0vtON0B598o2-sFGeppj8/view?usp=sharing"
                 target={"_blank"}
                 className="flex items-center bg-dark text-light p-2.5 pl-6 pr-5 md:p-2 md:px-4 md:text-base
                 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:border-light"
-                download={true}
               >
-                Resume
-                <LinkArrow className="w-6 ml-2" />
+                Portfolio
+                <LinkArrow className="w-6 h-6 ml-2" />
               </a>
               <Link
                 href="mailto:fionafdjk123@gmail.com"
