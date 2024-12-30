@@ -71,6 +71,16 @@ const Experience = (props: Props) => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             position="Full-stack Developer Intern"
+            company="Bypon Design Ltd."
+            companyLink="https://www.linkedin.com/company/bypon/"
+            time="2023-2024"
+            address="Taipei, Taiwan"
+            work="Developed and maintained scalable web applications using React, HTML, CSS, and Node.js, ensuring responsive and engaging user experiences. 
+            Collaborated with designers and backend developers to create reusable UI components and optimize data flows. 
+            Implemented version control with Git and participated in Agile workflows, contributing to efficient project delivery and seamless team collaboration."
+          />
+          <Details
+            position="Full-stack Developer Intern"
             company="Memopresso Inc."
             companyLink="https://www.memopresso.com/"
             time="2022-2023"
